@@ -1,4 +1,27 @@
-.header {
+h1 {
+    color: rgb(225, 225, 225);
+    font-size: 60px;
+    font-family: Gloria Hallelujah, cursive;
+}
+h3 {
+    color: rgb(225, 225, 225);
+    font-family: Gloria Hallelujah, cursive;
+}
+body {
     background-color: rgb(8, 8, 8);
-    padding: 400px
+    font-size: 18px;
+}
+.header-title{
+    padding-top: 400px;
+    padding-left: 200px;
+    padding-right: 300px;
+}
+.header-body {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.hover-box {
+    background-color: rgb(13, 13, 13);
+    border: 4px solid rgb(30, 30, 30);
+
 }
