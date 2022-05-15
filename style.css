@@ -2,26 +2,41 @@ h1 {
     color: rgb(225, 225, 225);
     font-size: 60px;
     font-family: Gloria Hallelujah, cursive;
+    animation: animated-text 2s steps(20,end) 1s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden; 
 }
 h3 {
     color: rgb(225, 225, 225);
     font-family: Gloria Hallelujah, cursive;
+    animation: animated-text 2s steps(20,end) 2.5s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden;
 }
 body {
     background-color: rgb(8, 8, 8);
     font-size: 18px;
+    color: rgb(200,200,200);
 }
 .header-title{
     padding-top: 400px;
     padding-left: 200px;
     padding-right: 300px;
+    
 }
 .header-body {
     padding-top: 100px;
     padding-bottom: 200px;
+    
 }
 .hover-box {
     background-color: rgb(13, 13, 13);
     border: 4px solid rgb(30, 30, 30);
 
+} 
+  /* text animation */
+  
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
 }
