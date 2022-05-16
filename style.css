@@ -23,15 +23,18 @@ body {
     color: rgb(200,200,200);
 }
 hr {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 30%;
+    margin-right: 30%;
     margin-top: 100px;
     margin-bottom: 100px;
 }
+img {
+    width: 100px;
+}
 .header-title{
     padding-top: 400px;
-    padding-left: 200px;
-    padding-right: 300px;
+    padding-left: 20%;
+    padding-right: 20%;
     
 }
 .header-body {
@@ -51,7 +54,12 @@ hr {
     border-left: 4px solid rgb(30, 30, 30);
 }
 .row-content {
-    padding-left: 200px;
-    padding-right: 300px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 80px;
 }
+.row-icons {
+    margin-left: 10%;
+}
+
   
