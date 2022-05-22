@@ -23,6 +23,14 @@ h4 {
     font-size: 60px;
     font-family: 'Bangers', cursive;
 }
+h6 {
+    font-size: 40px;
+    font-family: 'smooch', cursive;
+    transition: all 1.5s ease-in-out;
+}
+h6:hover {
+    transform: scale(1.1);
+}
 @keyframes animated-text{
     from{width: 0;}
     to{width: 472px;}
@@ -64,7 +72,11 @@ img {
     border-radius: 25em;
     width: 40%;
     position: relative;
-    animation: card-1move 0.2s steps(20,end) 10s 8 normal both;
+    transition: width 0.8s;
+    animation: card-1move 0.2s steps(20,end) 8s 8 normal both;
+}
+.card-1:hover {
+    width: 45%;
 }
 .row-content {
     padding-left: 20%;
@@ -84,12 +96,12 @@ img {
 .icon-bar {
     position: fixed;
     top: 50%;
+    z-index: 1;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   
-  /* Style the icon bar links */
   .icon-bar a {
     display: block;
     text-align: center;
@@ -99,9 +111,8 @@ img {
     font-size: 20px;
   }
   
-  /* Style the social media icons with color, if you want */
   .icon-bar a:hover {
-    background-color: #000;
+    background-color: #080808;
   }
   
   .facebook {
