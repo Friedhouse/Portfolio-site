@@ -6,6 +6,11 @@ h1 {
     white-space: nowrap;
     overflow: hidden; 
 }
+h2 {
+    color: rgb(225, 225, 225);
+    font-size: 60px;
+    font-family: Gloria Hallelujah, cursive;
+}
 h3 {
     color: rgb(225, 225, 225);
     font-family: Gloria Hallelujah, cursive;
@@ -18,7 +23,7 @@ h3 {
     to{width: 472px;}
 }
 body {
-    background-color: rgb(8, 8, 8);
+    background-color: #080808;
     font-size: 18px;
     color: rgb(200,200,200);
 }
@@ -32,7 +37,7 @@ img {
     width: 100px;
 }
 .header-title{
-    padding-top: 400px;
+    padding-top: 300px;
     padding-left: 20%;
     padding-right: 20%;
     
@@ -42,16 +47,42 @@ img {
     padding-bottom: 200px;
     
 }
-.hover-box {
-    background-color: rgb(13, 13, 13);
-    border: 4px solid rgb(30, 30, 30);
-
+@keyframes card-1move {
+    from {left: 0px;}
+    to {left: 5%;}
+    0%{transform: rotate(0);}
+    100%{transform:rotate(10deg);}
 }
-.card-1{
-    border-right: 4px solid rgb(30, 30, 30);
+@keyframes card-2move {
+    from {left: 0px;}
+    to {left: 5%;}
+    0%{transform: rotate(0);}
+    100%{transform:rotate(-10deg);}
+}
+.card-1 {
+    background-color: rgb(13, 13, 13);
+    width: 30%;
+    position: relative;
+    animation-name: card-1move;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+.card-2 {
+    background-color: rgb(13, 13, 13);
+    width: 30%;
+    position: relative;
+    animation-name: card-2move;
+    animation-duration: 10s;
+    animation-delay: 3s;
 }
 .p-card-page {
-    border-left: 4px solid rgb(30, 30, 30);
+    background-color: rgb(13, 13, 13);
+    width: 40%;
+    padding: 50px;
+    position: relative;
+    animation-name: card-1move;
+    animation-duration: 10s;
+    animation-delay: 3s;
 }
 .row-content {
     padding-left: 20%;
@@ -60,6 +91,7 @@ img {
 }
 .row-icons {
     margin-left: 10%;
+    padding-bottom: 60px;
 }
 
   
