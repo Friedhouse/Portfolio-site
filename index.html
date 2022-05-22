@@ -8,24 +8,32 @@
 
 <!--Bootstrap, font, and style links-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css"/>
 
 <!--Fonts-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 
 </head>
 <body>
     
+<!--Social Sticky Bar-->
+
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/shane.friedman.37" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/OurGeekyFamBam" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/shane-friedman-csfa-cst-73b0b1159/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/c/SurgicalTechTips" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
 
 <!--Header title/description-->
 
     <div class="container-fluid header-title">
         <div class="row">
-            <div class="col m ">
+            <div class="col">
                 <h1>Hello,</h1>
                 <h1>i'm Shane.</h1>
                 <h3>a web dev</h3>
@@ -33,7 +41,7 @@
         </div>
         <div class="row header-body">
             <div class="col">
-                <p>My life has been dedicated as a Healthcare professional in the Operating Room, but the time has come for a change. My coding journey started in January of 2022, I have committed hundreds of hours and mental power to learning the art of coding and web development through self-taught learning platforms and structured bootcamp courses. Including the site you're on, below are a few personal projects to showcase my journey.</p>
+                <p>My life has been dedicated as a Healthcare professional in the Operating Room, but the time has come for a change. My coding journey started in January of 2022, I have committed hundreds of hours and mental power to learning the art of coding and web development through self-taught learning platforms and structured bootcamp courses. Below is a site I have created to with HTML/CSS/Bootstrap, and I am working on converting the same site to a full React app to showcase my journey.</p>
             </div>
         </div>
     </div>
@@ -41,27 +49,18 @@
 <!--Personal Project Links-->
 
     <section class="container-fluid">
-        <div class="row text-center m-3 link-box">
-            <div class="col-3 card-1">
-                <a href="#" alt="#">
-                    
-                </a>  
-            </div>
-            <div class="col-4 card-2">
-                <a href="#" alt="#">
-
+        <div class="row justify-content-center m-3 link-box">
+            <div class="col-4 card-1">
+                <a class="btn" target="_blank" href="https://friedhouse.github.io/P-card-project/" alt="Beyond the scalpel site.">
+                    <h4>Beyond the Scalpel</h4>
                 </a>   
-            </div>
-            <div class="col-5 p-card-page">
-                <div>
-                    <a href="#" alt="#">
-                        
-                    </a>   
-                </div>
-            </div>
+            </div>  
         </div>
     </section>
-    <hr>
+<hr>
+
+<!--Language/Libraries-->
+
     <section class="container-fluid">
         <div class="row text-center mb-5">
             <div class="col">
@@ -95,39 +94,69 @@
         </div>
     </section>
 <hr>
+
+<!--Work Expereience Cards-->
+
     <section class="container-fluid">
-        <div class="row text-center mt-5">
+        <div class="row text-center mt-5 mb-5">
             <div class="col-12">
-                <h2>Work Experience</h2>
-                <div class="card bg-dark text-center mt-5">
+                <h2 class="work-xp">Work Experience</h2>
+                <div class="card text-center bg-dark">
                     <div class="card-header">
-                      <ul class="nav nav-pills card-header-pills">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="csfa">Certified Surgical First Assistant</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="cst">Certified Surgical Tech</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="youtube">YouTube</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-body">
-                        <div class="csfa">
-                            <h5 class="card-title">Mountain View Hospital 2017-Current</h5>
-                            <p class="card-text">In the current role of a Surgical Assistant on the CVT team at Mountain View Hospital. (Cardiac, Thoracic, and Vascular.) My role enables me to assist all of the surgeons I work with through out many different surgical procedures under their direction. Along with my surgical skills, I have held the role of Manager to the Surgical Heart team for 5 years, gaining many skills in team organization, disciplinary actions, hiring, and most of all learning how to listen and help my staff.</p>
-                            <p><strong>Surgical Skills Include:</strong></p>
-                            <p>All manor of CVT surgery</p>
-                            <p>Robotic Thoracic Procedures</p>
-                            <p>Maquet Endoscopic Vein Harvest</p>
-                            <p>Femoral/Arterial Cutdowns/ Anastomosis</p>
-                            <a href="https://mountainview-hospital.com/" class="btn btn-secondary">Hospital Link</a>
+                        <ul class="nav nav-pills bg-dark nav-fill" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active text-white" id="job1-tab" data-bs-toggle="tab" data-bs-target="#csfa-tab" type="button" role="tab" aria-controls="csfa" aria-selected="true">Certified Surgical First Assistant</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-white" id="job2-tab" data-bs-toggle="tab" data-bs-target="#cst-tab" type="button" role="tab" aria-controls="cst" aria-selected="false">Certified Surgical Tech</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-white" id="job3-tab" data-bs-toggle="tab" data-bs-target="#youtube-tab" type="button" role="tab" aria-controls="youtube" aria-selected="false">YouTube</button>
+                            </li>
+                        </ul>
+
+<!--CSFA Tab-->
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="csfa-tab" role="tabpanel" aria-labelledby="csfa-tab">                  
+                                <h5 class="card-title">Certified Surgical First Assistant</h5>
+                                <h5 class="card-text">Mountain View Hospital 2017-Current</h5>
+                                <p class="card-text">In the current role of a Surgical Assistant on the CVT team at Mountain View Hospital. (Cardiac, Thoracic, and Vascular.) My role enables me to assist all of the surgeons I work with throughout many different surgical procedures under there direction. Along with my surgical skills, I have held the role of Manager to the Surgical Heart team for 5 years, gaining many skills in team organization, disciplinary actions, hiring, and most of all learning how to listen and help my staff.</p>
+                                <p><strong>Surgical Skills Include:</strong></p>
+                                <p>All manor of CVT surgery</p>
+                                <p>Robotic Thoracic Procedures</p>
+                                <p>Maquet Endoscopic Vein Harvest</p>
+                                <p>Femoral/Arterial Cutdowns/ Anastomosis</p>
+                                <a href="https://mountainview-hospital.com/" target="_blank" class="btn btn-danger">Hospital Link</a>
+                            </div>
+                        
+
+<!--CST Tab-->
+
+                            <div class="tab-pane fade show" id="cst-tab" role="tabpanel" aria-labelledby="cst-tab">                  
+                                <h5 class="card-title">Certified Surgical Tech</h5>
+                                <h5 class="card-text">Mountain View Hospital 2008-2017</h5>
+                                <p class="card-text">In my previous role of a Surgical Tech I had the opportunity to work in many different specialties inlcuding: Obgyn, General, Ortho, Podiatry, Vascular, Thoracic, and Cardiac. As a surgical tech your role includes organizing instrumentation and supplies for surgical procedures, as well as handing the above to the surgeon or assistant throughout a case. It took a great amount of organizational skills to not only know and understand the procedures themselves, but the preferences for each of the individual surgeons and assistants I associated with.</p>
+                                <a href="https://mountainview-hospital.com/" target="_blank" class="btn btn-danger">Hospital Link</a>
+                            </div>
+
+<!--YouTube Tab-->
+
+                            <div class="tab-pane fade show" id="youtube-tab" role="tabpanel" aria-labelledby="youtube-tab">                  
+                                <h5 class="card-title">Surgical Tech Tips YouTube</h5>
+                                <h5 class="card-text">YouTube 2017-Current</h5>
+                                <p class="card-text">I have to pay taxes on the money earned from Google, so I guess its a job! I started with the idea of making YouTube videos related to my job, as their was not a lot of information about it on the internet. I self taught through research on the internet how to make a channel, help it grow, SEO, Thumbnail creation, Editing, Videography, etc. It has been a great experience. I have delt with and met some great people from it, but I only saw it as something fun to do on the side. Despite the success of the channel, I have stepped away from further video creation to focus elsewhere.</p>
+                                <a class="btn btn-danger" target="_blank" href="https://www.youtube.com/c/SurgicalTechTips">SurgicalTechTips</a>
+                            </div>
                         </div>
                     </div>
-                  </div>
+                </div>
+            </div>
         </div>
     </section>
+<hr>
+
+   
 
 
 
