@@ -83,7 +83,7 @@ img {
 .card-1 {
     background-color: rgb(29, 110, 129);
     border-radius: 25em;
-    width: 40%;
+    width: 400px;
     position: relative;
     transition: width 0.8s;
     animation: card-1move 0.2s steps(20,end) 8s 8 normal both;
