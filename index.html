@@ -27,21 +27,59 @@
         <a href="https://twitter.com/OurGeekyFamBam" class="twitter"><i class="fa fa-twitter"></i></a>
         <a href="https://www.linkedin.com/in/shane-friedman-csfa-cst-73b0b1159/" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="https://www.youtube.com/c/SurgicalTechTips" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="https://github.com/Friedhouse" class="github"><i class="fa fa-github"></i></a>
     </div>
 
 <!--Header title/description-->
 
     <div class="container-fluid header-title">
         <div class="row">
-            <div class="col">
+            <div class="col-4">
                 <h1>Hello,</h1>
                 <h1>i'm Shane.</h1>
                 <h3>a web dev</h3>
             </div>
+
+<!--Profile Pic & Header Body-->
+
+            <div class="col offset-md-4">
+                <img class="profile-pic" src="./images/profile-pic.jpg" />
+            </div>
         </div>
         <div class="row header-body">
-            <div class="col">
-                <p>My life has been dedicated as a Healthcare professional in the Operating Room, but the time has come for a change. My coding journey started in January of 2022, I have committed hundreds of hours and mental power to learning the art of coding and web development through self-taught learning platforms and structured bootcamp courses. Below is a site I have created to with HTML/CSS/Bootstrap, and I am working on converting the same site to a full React app to showcase my journey.</p>
+            <div class="col-12">
+                <p>My life has been dedicated as a Healthcare professional in the Operating Room, but the time has come for a change. My coding journey started at the end of 2021. I have committed hundreds of hours to learning the art of coding and web development through self-taught learning platforms and structured bootcamp courses through Nucamp. Coding has quickly become a passion that I knew I would love. Below is a site I have created to with HTML/CSS/Bootstrap, and I am working on converting the same site to a full React app to showcase my journey.</p>
+            </div> 
+    
+<!-- Button Contact modal -->
+
+            <div class="col contact-btn text-center mt-4">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    Contact me
+                </button>
+  
+<!-- Contact Modal -->
+
+                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark" id="contactModalLabel">Shane Friedman</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-dark">
+                                <p>Phone Number:</p>
+                                <a href="tel:+7027697411">Call or Text @ 702-769-7411</a>
+                            
+                                <p class="mt-3">Email:</p>
+                                <a href="mailto: sfriedman7410@gmail.com">sfriedman7410@gmail.com</a>
+                            </div>
+                            <div class="modal-footer text-danger">
+                                <p>You can also contact me on any of my social links on the left.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -49,7 +87,11 @@
 <!--Personal Project Links-->
 
     <section class="container-fluid">
-        <div class="row justify-content-center m-3 link-box">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <p>*Self Built Site*</p>
+                <p>(Check out the templates link)</p>
+            </div>
             <div class="col-4 card-1">
                 <a class="btn" target="_blank" href="https://friedhouse.github.io/P-card-project/" alt="Beyond the scalpel site.">
                     <h4>Beyond the Scalpel</h4>
@@ -98,17 +140,17 @@
 <!--Work Expereience Cards-->
 
     <section class="container-fluid">
-        <div class="row text-center mt-5 mb-5">
-            <div class="col-12">
-                <h2 class="work-xp">Work Experience</h2>
+        <div class="row  justify-content-center mt-5 mb-5">
+            <div class="col-10">
+                <h2 class="work-xp text-center">Work Experience</h2>
                 <div class="card bg-dark">
                     <div class="card-header">
-                        <ul class="nav nav-pills bg-dark nav-fill" id="myTab" role="tablist">
+                        <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active text-white" id="job1-tab" data-bs-toggle="tab" data-bs-target="#csfa-tab" type="button" role="tab" aria-controls="csfa" aria-selected="true">Certified Surgical First Assistant</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link text-white" id="job2-tab" data-bs-toggle="tab" data-bs-target="#cst-tab" type="button" role="tab" aria-controls="cst" aria-selected="false">Certified Surgical Tech</button>
+                                <button class="nav-link text-white" id="job2-tab" data-bs-toggle="tab" data-bs-target="#cst-tab" type="button" role="tab" aria-controls="cst" aria-selected="false">Certified Surgical Technologist</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link text-white" id="job3-tab" data-bs-toggle="tab" data-bs-target="#youtube-tab" type="button" role="tab" aria-controls="youtube" aria-selected="false">YouTube</button>
@@ -119,34 +161,40 @@
 
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="csfa-tab" role="tabpanel" aria-labelledby="csfa-tab">                  
-                                <h5 class="card-title">Certified Surgical First Assistant</h5>
-                                <h5 class="card-text">Mountain View Hospital 2017-Current</h5>
+                                <h5 class="card-title text-center">Certified Surgical First Assistant</h5>
+                                <h5 class="card-text text-center mb-4">Mountain View Hospital 2017-Current</h5>
                                 <p class="card-text">In the current role of a Surgical Assistant on the CVT team at Mountain View Hospital. (Cardiac, Thoracic, and Vascular.) My role enables me to assist all of the surgeons I work with throughout many different surgical procedures under there direction. Along with my surgical skills, I have held the role of Manager to the Surgical Heart team for 5 years, gaining many skills in team organization, disciplinary actions, hiring, and most of all learning how to listen and help my staff.</p>
-                                <p><strong>Surgical Skills Include:</strong></p>
-                                <p>All manor of CVT surgery</p>
-                                <p>Robotic Thoracic Procedures</p>
-                                <p>Maquet Endoscopic Vein Harvest</p>
-                                <p>Femoral/Arterial Cutdowns/ Anastomosis</p>
-                                <a href="https://mountainview-hospital.com/" target="_blank" class="btn btn-danger">Hospital Link</a>
+                                <div class="skills text-center">
+                                    <p><strong>Surgical Skills Include:</strong></p>
+                                    <p>All manor of CVT surgery</p>
+                                    <p>Robotic Thoracic Procedures</p>
+                                    <p>Maquet Endoscopic Vein Harvest</p>
+                                    <p>Femoral/Arterial Cutdowns/ Anastomosis</p>
+                                    <a href="https://mountainview-hospital.com/" target="_blank" class="btn btn-primary">Hospital Link</a>
+                                </div>
                             </div>
                         
 
 <!--CST Tab-->
 
                             <div class="tab-pane fade show" id="cst-tab" role="tabpanel" aria-labelledby="cst-tab">                  
-                                <h5 class="card-title">Certified Surgical Tech</h5>
-                                <h5 class="card-text">Mountain View Hospital 2008-2017</h5>
+                                <h5 class="card-title text-center">Certified Surgical Tech</h5>
+                                <h5 class="card-text text-center mb-4">Mountain View Hospital 2008-2017</h5>
                                 <p class="card-text">In my previous role of a Surgical Tech I had the opportunity to work in many different specialties inlcuding: Obgyn, General, Ortho, Podiatry, Vascular, Thoracic, and Cardiac. As a surgical tech your role includes organizing instrumentation and supplies for surgical procedures, as well as handing the above to the surgeon or assistant throughout a case. It took a great amount of organizational skills to not only know and understand the procedures themselves, but the preferences for each of the individual surgeons and assistants I associated with.</p>
-                                <a href="https://mountainview-hospital.com/" target="_blank" class="btn btn-danger">Hospital Link</a>
+                                <div class="text-center">
+                                    <a href="https://mountainview-hospital.com/" target="_blank" class="btn btn-primary">Hospital Link</a>
+                                </div>
                             </div>
 
 <!--YouTube Tab-->
 
                             <div class="tab-pane fade show" id="youtube-tab" role="tabpanel" aria-labelledby="youtube-tab">                  
-                                <h5 class="card-title">Surgical Tech Tips YouTube</h5>
-                                <h5 class="card-text">YouTube 2017-Current</h5>
+                                <h5 class="card-title text-center">Surgical Tech Tips YouTube</h5>
+                                <h5 class="card-text text-center mb-4">YouTube 2017-Current</h5>
                                 <p class="card-text">I have to pay taxes on the money earned from Google, so I guess its a job! I started with the idea of making YouTube videos related to my job, as their was not a lot of information about it on the internet. I self taught through research on the internet how to make a channel, help it grow, SEO, Thumbnail creation, Editing, Videography, etc. It has been a great experience. I have delt with and met some great people from it, but I only saw it as something fun to do on the side. Despite the success of the channel, I have stepped away from further video creation to focus elsewhere.</p>
-                                <a class="btn btn-danger" target="_blank" href="https://www.youtube.com/c/SurgicalTechTips">SurgicalTechTips</a>
+                                <div class="text-center">
+                                    <a class="btn btn-primary" target="_blank" href="https://www.youtube.com/c/SurgicalTechTips">SurgicalTechTips</a>
+                                </div>
                             </div>
                         </div>
                     </div>
