@@ -19,7 +19,38 @@
 
 </head>
 <body>
+
+<!--Top Nav Bar--> 
     
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#languages">Languages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#xp">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" class="btn" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        Contact
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
 <!--Social Sticky Bar-->
 
     <div class="icon-bar">
@@ -92,7 +123,7 @@
                 <p>*Self Built Site*</p>
                 <p>(Check out the templates link)</p>
             </div>
-            <div class="col-4 text-center card-1">
+            <div class="col-4 text-center card-1" id="projects">
                 <a class="btn " target="_blank" href="https://friedhouse.github.io/P-card-project/" alt="Beyond the scalpel site.">
                     <h4>Beyond the Scalpel</h4>
                 </a>   
@@ -104,7 +135,7 @@
 <!--Language/Libraries-->
 
     <section class="container-fluid">
-        <div class="row text-center mb-5">
+        <div class="row text-center mb-5" id="languages">
             <div class="col">
                 <h2>Languages & Libraries</h2>
             </div>
@@ -118,19 +149,19 @@
 <!--Icon Images of experience-->
 
         <div class="row row-icons">
-            <div class="col-2">
+            <div class="col">
                 <img src="./images/HTML5.png" />
             </div>
-            <div class="col-2">
+            <div class="col">
                 <img src="./images/CSS3.png" />
             </div>
-            <div class="col-2 ms-3">
+            <div class="col">
                 <img src="./images/Javascript.svg" />
             </div>
-            <div class="col-2 mt-2">
+            <div class="col mt-2">
                 <img src="./images/bootstrap5.svg" />
             </div>
-            <div class="col-2 mt-1">
+            <div class="col mt-1">
                 <img src="./images/React.png" />
             </div>
         </div>
@@ -140,7 +171,7 @@
 <!--Work Expereience Cards-->
 
     <section class="container-fluid">
-        <div class="row  justify-content-center mt-5 mb-5">
+        <div class="row justify-content-center mt-5 mb-5" id="xp">
             <div class="col-10">
                 <h2 class="work-xp text-center">Work Experience</h2>
                 <div class="card bg-dark">
@@ -207,7 +238,7 @@
 <!--Hobbies-->
 
     <section class="container-fluid">
-        <div class="row row-content text-center">
+        <div class="row row-content text-center" id="hobbies">
             <div class="col">
                 <h2>Hobbies</h2>
             </div>
@@ -225,12 +256,10 @@
         <h6 class="text-center">"The best gift to give to a loved one, is the gift of a great memory."</h6>
     </section> 
 <hr>
-   
-<!--Contact me-->
 
     <Footer>
         <div class="mb-5">
-            
+            <a href="#" class="to-top">Back To Top</a>
         </div>
     </Footer>
 
