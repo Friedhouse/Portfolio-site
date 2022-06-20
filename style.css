@@ -24,7 +24,7 @@ h3 {
 h4 {
     color: rgb(225, 225, 225);
     font-size: 2.5em;
-    font-family: 'Bangers', cursive;
+    font-family: "bangers", cursive
 }
 
 h6 {
@@ -129,7 +129,7 @@ img {
 }
 
 .card-small {
-    width: 20%
+    width: 15%
 }
 
 .card-large {
@@ -164,7 +164,7 @@ img {
 
 .icon-bar {
     position: fixed;
-    top: 50%;
+    top: 25%;
     z-index: 1;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
